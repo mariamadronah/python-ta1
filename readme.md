@@ -36,11 +36,19 @@ def solution(n):
     # your code goes here
 
 
-if __name__ == "__main__":
-    if len(sys.argv) <= 1:
-        sys.exit(os.error("Argument required"))
 
-    n = int(sys.argv[1])
+#if __name__ == "__main__":
+    if n <= 1:
+        print("not a prime number")
+    for i in range(2,n):
+        if (n%i==0):
+            print("not a prime number")
+            sys.exit(os.error("number > 1 required"))
+        print(is a prime number)    
+
+
+n=int(input(enter a number))
+    n = int(n[1])
     print(solution(n))
 
 ```
